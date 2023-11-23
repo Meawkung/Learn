@@ -1,0 +1,11 @@
+li{
+    list-style-type: none;
+    margin: 1px auto;
+    padding: 5px;
+    background-color: #dadada;
+}
+
+li:hover{
+    background-color: #a0a0a0;
+    color: blue;
+}
