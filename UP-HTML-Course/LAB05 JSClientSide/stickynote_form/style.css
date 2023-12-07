@@ -1,0 +1,32 @@
+li{
+    list-style-type: none;
+    margin: 1px auto;
+    padding: 5px;
+    background-color: #dadada;
+}
+
+li:hover{
+    background-color: #a0a0a0;
+    color: blue;
+}
+
+#stick1, #stick2, #stick3{
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+#stick1{
+    background-color: rgb(168, 110, 223);
+    box-shadow: 5px 10px 5px rgb(103, 103, 120);
+}
+#stick2{
+    background-color: rgb(43,226,165);
+    box-shadow: 5px 10px 5px rgb(12, 173, 120);
+}
+#stick3{
+    background-color: rgb(192,226,43);
+    box-shadow: 5px 10px 5px rgb(134, 161, 11);
+}

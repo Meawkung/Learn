@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-start row bg-primary bg-gradient p-4">
+            <div class="col">
+                <img class="img-fluid " width="15%" src="/LAB05 JSClientSide/stickynote_form/img/ict_tran.png" alt="ictlogo">
+            </div>
+            <div class="col">
+                <h1 class="text-light text-center">ยินดีต้อนรับเข้าสู่ Web Technology</h1>
+            </div>
+            <div class="col">
+                <h1 class="text-end">Hello <div id="name"></div></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sm-12 bg-light p-3" style="height: 83vh">
+                <ul class="p-0">
+                    <h3 class="text-center text-primary bg-white p-0">Menu</h3>
+                    <li>Home</li>
+                    <li>News</li>
+                    <li>Contact us</li>
+                    <li>About us</li>
+                </ul>
+        </div>
+        <div class="col-md-10 col-sm-12 pt- 5 " overflow: auto;>
+            <div class="main-layout text-center">
+                <div id="stick1">Sticky1</div>
+                <div id="stick2">Sticky2</div>
+                <div id="stick3">Sticky3</div>
+            </div>
+            <!-- Username input -->
+            <div class="mb-3">
+                <label for="text-input" class="form-label">Username : </label>
+                <input type="text" class="form-control" id="text-input" name="text-input" required>
+            </div>
+            <!-- password-input -->
+            <div class="mb-3">
+                <label for="password-input" class="form-label">Password : </label>
+                <input type="password" class="form-control" id="password-input" name="password-input" required>
+            </div>
+            <!-- Text area -->
+            <div class="mb-3">
+                <label for="textarea" class="form-label">Textarea :</label>
+                <textarea class="form-control" id="textarea" name="textarea" rows="4" required></textarea>
+            </div>
+            <!-- Radio button -->
+            <div class="mb-3" form-check>
+                <label for="form-label">Gender:</label>
+                    <input class="form-check=input" type="radio" name="gender" id="male" value="male" required>
+                    <label class="form-check-label" for="male">Male</label>
+                    <input class="form-check=input" type="radio" name="gender" id="female" value="female" required>
+                    <label class="form-check-label" for="male">Female</label>
+
+            </div>
+            <!-- Checkbox -->
+            <div class="mb-3" form-check>
+                <label for="form-label">สาขาที่ชอบ (ตอบได้มากกว่า 1 ข้อ) :</label>
+                <input type="checkbox" class="form-check-input" id="software" name="software" value="software">
+                <label class="form-check-label" for="software">ซอฟต์แวร์</label>
+                <input type="checkbox" class="form-check-input" id="hardware" name="hardware" value="hardware">
+                <label class="form-check-label" for="hardware">ฮาร์ดแวร์</label>
+                <input type="checkbox" class="form-check-input" id="network" name="network" value="network">
+                <label class="form-check-label" for="network">เน็ตเวิร์ค</label>
+            </div>
+            <!-- Select dropdown -->
+            <div class="mb-3">
+                <label for="select" class="form-label">สายงานที่จะทำหลังเรียนจบ :</label>
+                <select class="form-select" id="job" name="job" required>
+                    <option value="Programmer">Programmer</option>
+                    <option value="Industry">โรงงาน</option>
+                    <option value="StartUp">StartUp</option>
+                    <option value="MD">เรียนต่อปริญญาโท</option>
+                    <option value="PHD">เรียนต่อปริญญาเอก</option>
+                </select>
+            </div> 
+            <!-- Submit button -->
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row bg-info p-3 w-100 bottom-0" style="position:fixed-bottom ;">
+        <div class="col-12">&copy;2023 Meawkung</div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="promptname.js"></script> -->
+    <script src="forms.js"></script>
+</body>
+</html>
