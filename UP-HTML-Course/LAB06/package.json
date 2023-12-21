@@ -1,0 +1,22 @@
+{
+  "name": "iot_data_sm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wstart": "node --watch index.js",
+    "liveserver": "node --watch liveserver.js",
+    "start": "node index.js",
+    "server": "node --watch server.js",
+    "staticfiles": "node --watch staticfiles.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5",
+    "nodemon": "^3.0.2"
+  }
+}
