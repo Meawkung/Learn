@@ -1,0 +1,34 @@
+//asynchronous
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/UP-HTML-Course/Bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <div class="container main-container">
+        <div class="text-center text-primary h1 mb-4">Demp: <label id = "demo"></label></div>
+        <div class="text-center text-primary h1 mb-4">Run: <label id = "run"></label></div>
+    </div>
+
+    <script>
+       async function myDisplay(){
+        const response = await fetch('/time');
+        if (!response.ok){
+            throw new Error('HTTP error! status: ${response.status}');
+        }
+        document.getElementById("demo").innerHTML = await response.text();
+       }
+
+       setInterval(()=>
+       {
+           myDisplay();
+       },1000);
+
+       document.getElementById("run").innerHTML = "<h2 class='text-success mb-4'>Running...</h2>";
+    </script>
+</body>
+</html>
