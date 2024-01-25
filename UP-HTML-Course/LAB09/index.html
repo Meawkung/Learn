@@ -1,0 +1,35 @@
+//asynchronous
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/UP-HTML-Course/Bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <div class="container main-container">
+        <div class="text-center text-primary h1 mb-4">Now <label id = "clock"></label></div>
+        <div class="text-center text-primary h1 mb-4">Now <label id = "clock2"></label></div>
+    </div>
+
+    <script>
+        setInterval(clock,1000)
+
+        function clock(){
+            var d = new Date();
+            
+            h = d.getHours();
+            m = d.getMinutes();
+            s = d.getSeconds();
+
+            document.getElementById("clock").innerHTML =
+            h + ":" + m + ":" + s;
+
+            document.getElementById("clock2").innerHTML =
+            String(h).padStart(2,0) + ":" + String(m).padStart(2,0) + ":" + String(s).padStart(2,0);
+        }
+    </script>
+</body>
+</html>
